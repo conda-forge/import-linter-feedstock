@@ -14,7 +14,7 @@ build:
     - lint-imports = importlinter.cli:lint_imports_command
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
