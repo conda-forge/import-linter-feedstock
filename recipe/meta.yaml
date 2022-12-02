@@ -1,5 +1,5 @@
 {% set name = "import-linter" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/import-linter-{{ version }}.tar.gz
-  sha256: 8f682c3b10087fdba062f2d62b118fdce7fc01cc848df863e85c1a97e1194cca
+  sha256: f57e864aaddafe6bfbf23fd0c65ec3f3b0b0f2ba07dee57ea13a13946e19d190
 
 build:
   entry_points:
     - lint-imports = importlinter.cli:lint_imports_command
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
