@@ -25,6 +25,7 @@ requirements:
     - click >=6
     - grimp >=2.0
     - typing-extensions >=3.10.0.0
+    - tomli >=1.2.1
 
 test:
   imports:
