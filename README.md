@@ -1,11 +1,11 @@
-About import-linter
-===================
+About import-linter-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/import-linter-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/import-linter/
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/import-linter-feedstock/blob/main/LICENSE.txt)
 
 Summary: Enforces rules for the imports within and between Python packages.
 
