@@ -1,5 +1,5 @@
 {% set name = "import-linter" %}
-{% set version = "1.9.0" %}
+{% set version = "1.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/import-linter-{{ version }}.tar.gz
-  sha256: fe63a68d023af46ba853923e643d0f5e802c0b974fae9ce5654962c31c873784
+  sha256: b9cde0b7d0b4859341737466df040d4a1f39299aed3131eb00ca8731042dac6c
 
 build:
   entry_points:
