@@ -18,14 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<3.11
+    - python >=3.7
     - pip
   run:
-    - python >=3.7,<3.11
+    - python >=3.7
     - click >=6
-    - grimp >=2.0
-    - typing-extensions >=3.10.0.0
+    - grimp >=2.5
     - tomli >=1.2.1
+    - typing-extensions >=3.10.0.0
 
 test:
   imports:
