@@ -19,15 +19,15 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=61.2
+    - hatchling
     - pip
   run:
-    - typing_extensions >=3.10.0.0
     - python >={{ python_min }}
     - click >=6
     - grimp >=3.12
     - tomli >=1.2.1
     - typing-extensions >=3.10.0.0
+    - typing_extensions >=3.10.0.0
 
 test:
   imports:
