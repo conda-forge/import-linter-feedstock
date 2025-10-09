@@ -1,5 +1,5 @@
 {% set name = "import-linter" %}
-{% set version = "2.5" %}
+{% set version = "2.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/import_linter-{{ version }}.tar.gz
-  sha256: 208916ca6cadf6a0f94bdc3e68cf6a084cce9d731803cc62e8d835bc2c7b79ea
+  sha256: fe7c9354ebe54fbf6f9a91db34e76562c492bfc520a038240ab10f7171750636
 
 build:
   entry_points:
@@ -25,7 +25,7 @@ requirements:
     - typing_extensions >=3.10.0.0
     - python >={{ python_min }}
     - click >=6
-    - grimp >=3.7
+    - grimp >=3.12
     - tomli >=1.2.1
     - typing-extensions >=3.10.0.0
 
