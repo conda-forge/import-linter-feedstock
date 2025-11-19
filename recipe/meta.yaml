@@ -1,5 +1,5 @@
 {% set name = "import-linter" %}
-{% set version = "2.6" %}
+{% set version = "2.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/import_linter-{{ version }}.tar.gz
-  sha256: 60429a450eb6ebeed536f6d2b83428b026c5747ca69d029812e2f1360b136f85
+  sha256: 7bea754fac9cde54182c81eeb48f649eea20b865219c39f7ac2abd23775d07d2
 
 build:
   entry_points:
@@ -22,6 +22,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - rich >=14.2.0
     - python >={{ python_min }}
     - click >=6
     - grimp ==3.13
