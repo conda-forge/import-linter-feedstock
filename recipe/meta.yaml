@@ -1,5 +1,5 @@
 {% set name = "import-linter" %}
-{% set version = "2.10" %}
+{% set version = "2.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/import_linter-{{ version }}.tar.gz
-  sha256: c6a5057d2dbd32e1854c4d6b60e90dfad459b7ab5356230486d8521f25872963
+  sha256: 5abc3394797a54f9bae315e7242dc98715ba485f840ac38c6d3192c370d0085e
 
 build:
   entry_points:
@@ -22,6 +22,7 @@ requirements:
     - hatchling
     - pip
   run:
+    - nox
     - fastapi
     - uvicorn
     - rich >=14.2.0
