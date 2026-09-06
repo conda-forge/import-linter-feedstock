@@ -14,7 +14,7 @@ build:
     - lint-imports = importlinter.cli:lint_imports_command
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,7 +22,6 @@ requirements:
     - hatchling
     - pip
   run:
-    - nox
     - fastapi
     - uvicorn
     - rich >=14.2.0
